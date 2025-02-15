@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Frontend - Data Entry</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Entry</h1>
+        <div id="message" class="message"></div>
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="netId" placeholder="Net ID (ABC123456)" maxlength="9" oninput="validateNetId()">
+        <input type="text" id="swipe" placeholder="Swipe (;1234567890123456)" maxlength="17" oninput="validateSwipe()">
+        <button onclick="submitData()">Enter</button>
+    </div>
+</body>
+</html>
+
